@@ -8,6 +8,13 @@ body {
   color: white;
 }
 
+.btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 .btn .icon {
   /* 
    * date: 2024-02-13 

@@ -1,9 +1,7 @@
 <ul>
-{{ range .Site.RegularPages }}
-  {{ if .Section }}
+{{ range first 5 (where .Site.RegularPages.ByDate.Reverse "Section" "!=" "") }}
    <li>
-    <a href="{{ .RelPermalink }}">[{{ .Date | time.Format "2006-01-02"}}] {{ .Title }}</a>
+    <a href="{{ .RelPermalink }}">[{{ .Date | time.Format "2006-01-02" }}] {{ .Title }}</a>
    </li>
-  {{ end }}
 {{ end }}
 </ul>

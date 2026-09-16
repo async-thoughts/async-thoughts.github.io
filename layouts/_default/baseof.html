@@ -2,15 +2,15 @@
 <html lang="en-US">
 
 <head>
-  <title>{{ .Site.Title }}</title>
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   {{- partial "head/meta.html" . -}}
 </head>
 
 <body>
   <header>
-    <div class="btn" onclick="toggleDarkMode()">
+    <button class="btn" onclick="toggleDarkMode()" aria-label="Toggle dark mode">
       <span class="icon"></span>
-    </div>
+    </button>
 
     {{- partial "header.html" . -}}
   </header>
