@@ -9,6 +9,8 @@ The amount of `threads` keeps increasing due above reason, leading to some rando
 
 ## Work
 
-I currently write code at [Sky](https://sky.com)
+I currently write code at $HOME:
 Previously:
+  - [NovoServe](https://novoserve.com/)
+  - [Sky](https://sky.com)
   - [Casafari](https://casafari.com)
